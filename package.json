@@ -19,7 +19,6 @@
     "prebuild": "rimraf ./dist",
     "build": "vite build",
     "development:link": "npm link",
-    "development:unlink": "npm unlink",
     "test": "jest --verbose",
     "test:coverage": "jest --verbose --coverage",
     "feature-start": "feature-start --featureName",
