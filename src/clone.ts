@@ -7,10 +7,37 @@ const createCloneHook = <T extends {}, R extends {} = {}>(): SyncCloneHook<T, R>
   //do not inline cause need to separate hooks in debug
   const cloneHook: SyncCloneHook<T, R> = ({ value, path, key, state }) => {
     key = path.length ? key : JSON_ROOT_KEY
-    state.node[key] = isObject(value) ? (Array.isArray(value) ? [] : {}) : value
+    state.node[key] = isObject(value)
+      ? (
+          Array.isArray(value)
+            ? []
+            : value?._target
+              ? createProxy(value)
+              : {}
+        )
+      : value
     return { value, state: { ...state, node: state.node[key] } }
   }
   return cloneHook
+}
+export const createProxy = (value: any): {} => {
+  const extraFields = {...value};
+
+  return new Proxy(value?._target, {
+    get(target, prop, receiver) {
+      if (prop === '_target') {
+        return target;
+      }
+      if (prop === 'description' || prop === 'summary') {
+        return extraFields[prop] ?? target[prop]
+      }
+      return Reflect.get(target, prop, receiver)
+    },
+    set(target, prop: string, value) {
+      extraFields[prop] = value;
+      return true;
+    },
+  })
 }
 
 export const clone = async <T extends {}, R extends {} = {}>(
