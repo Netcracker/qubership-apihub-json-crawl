@@ -1,0 +1,19 @@
+name: qubership-apihub-json-crawl
+version: 1.0.0
+description: APM project for qubership-apihub-json-crawl
+author: netcracker
+# Which agent platforms to deploy to.
+# Resolution order: --target flag > this field > auto-detect from filesystem.
+# Accepted values: copilot, claude, cursor, opencode, codex, gemini, windsurf, all
+targets:
+- claude
+- cursor
+dependencies:
+  apm: []
+  mcp: []
+includes: auto
+scripts: {}
+
+devDependencies:
+  apm:
+    - Netcracker/qubership-ai-packages/agent-packages/apm-authoring#v1.0.0

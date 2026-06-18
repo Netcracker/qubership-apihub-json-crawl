@@ -8,3 +8,6 @@ browser
 coverage
 .DS_store/
 *.iml
+
+# APM dependencies
+apm_modules/
