@@ -1,18 +1,17 @@
 name: qubership-apihub-json-crawl
 version: 1.0.0
-description: APM project for qubership-apihub-json-crawl
-author: netcracker
-# Which agent platforms to deploy to.
-# Resolution order: --target flag > this field > auto-detect from filesystem.
-# Accepted values: copilot, claude, cursor, opencode, codex, gemini, windsurf, all
+description: Agent guidance for developing, testing, and consuming the json-crawl traversal library.
+author: Netcracker
+license: Apache-2.0
+
 targets:
-- claude
-- cursor
+  - claude
+  - cursor
+
 dependencies:
-  apm: []
-  mcp: []
-includes: auto
-scripts: {}
+  apm:
+    - ./agent-packages/json-crawl-authoring
+    - ./agent-packages/json-crawl-testing
 
 devDependencies:
   apm:
