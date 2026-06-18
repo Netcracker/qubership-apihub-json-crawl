@@ -1,59 +1,36 @@
 lockfile_version: '1'
-generated_at: '2026-06-18T13:56:35.251774+00:00'
+generated_at: '2026-06-18T14:29:43.358128+00:00'
 apm_version: 0.20.0
 dependencies:
-- repo_url: Netcracker/qubership-ai-packages
-  host: github.com
-  resolved_commit: 2ca2d172d959b9599948cabf5f9bdc27c527c2ba
-  resolved_ref: v1.0.0
-  virtual_path: agent-packages/apm-authoring
-  is_virtual: true
-  package_type: apm_package
-  deployed_files:
-  - .agents/skills/apm-authoring
-  - .agents/skills/apm-authoring/SKILL.md
-  - .claude/rules/apm-authoring.md
-  - .claude/skills/apm-authoring
-  - .claude/skills/apm-authoring/SKILL.md
-  - .cursor/rules/apm-authoring.mdc
-  - .cursor/skills/apm-authoring
-  - .cursor/skills/apm-authoring/SKILL.md
-  deployed_file_hashes:
-    .agents/skills/apm-authoring/SKILL.md: sha256:68f20adab8e3643fb3faf046bb3bbd2dcdd090759e7b5a7c87fd7773eda13ff4
-    .claude/rules/apm-authoring.md: sha256:7765790164bec3eebae79661ec405e098979aac3d6bf80f3a08d61a4a618d7f8
-    .claude/skills/apm-authoring/SKILL.md: sha256:68f20adab8e3643fb3faf046bb3bbd2dcdd090759e7b5a7c87fd7773eda13ff4
-    .cursor/rules/apm-authoring.mdc: sha256:c75cdff456414f7e4726212e4fe58888db5bec7331ef4282488c9ff657c2027f
-    .cursor/skills/apm-authoring/SKILL.md: sha256:68f20adab8e3643fb3faf046bb3bbd2dcdd090759e7b5a7c87fd7773eda13ff4
-  content_hash: sha256:ecfc8264d333acac6b8a2c0239c8da87243b798c26f876ff16e7eedcf71d9ba6
 - repo_url: _local/json-crawl-authoring
   package_type: apm_package
   deployed_files:
+  - .agents/skills/json-crawl-authoring
+  - .agents/skills/json-crawl-authoring/SKILL.md
   - .claude/rules/json-crawl-authoring.md
   - .claude/skills/json-crawl-authoring
   - .claude/skills/json-crawl-authoring/SKILL.md
   - .cursor/rules/json-crawl-authoring.mdc
-  - .cursor/skills/json-crawl-authoring
-  - .cursor/skills/json-crawl-authoring/SKILL.md
   deployed_file_hashes:
+    .agents/skills/json-crawl-authoring/SKILL.md: sha256:9e9f851b0a3b9220aa9ba37320be73247a601abb693c1b75441aa5cff21ebf73
     .claude/rules/json-crawl-authoring.md: sha256:6fa3fd15cc49abb693d9a39c7064b49afa11a25eda52f804d167d11409bd9880
     .claude/skills/json-crawl-authoring/SKILL.md: sha256:9e9f851b0a3b9220aa9ba37320be73247a601abb693c1b75441aa5cff21ebf73
     .cursor/rules/json-crawl-authoring.mdc: sha256:4a076e268fc9054c4de1db9f629d2a075c20f4d39832adc83a0e147025921c3b
-    .cursor/skills/json-crawl-authoring/SKILL.md: sha256:9e9f851b0a3b9220aa9ba37320be73247a601abb693c1b75441aa5cff21ebf73
   source: local
   local_path: ./agent-packages/json-crawl-authoring
 - repo_url: _local/json-crawl-testing
   package_type: apm_package
   deployed_files:
+  - .agents/skills/json-crawl-testing
+  - .agents/skills/json-crawl-testing/SKILL.md
   - .claude/rules/json-crawl-testing.md
   - .claude/skills/json-crawl-testing
   - .claude/skills/json-crawl-testing/SKILL.md
   - .cursor/rules/json-crawl-testing.mdc
-  - .cursor/skills/json-crawl-testing
-  - .cursor/skills/json-crawl-testing/SKILL.md
   deployed_file_hashes:
+    .agents/skills/json-crawl-testing/SKILL.md: sha256:4bc171f8f893f59b1bdfc0beb5c870b70a7ceef96b02cc7ba3385001b5dacf67
     .claude/rules/json-crawl-testing.md: sha256:0f32095548fef3619c9d0b5fee43a1ac350ba9b7f4ba9fe1eb1652662c692c03
     .claude/skills/json-crawl-testing/SKILL.md: sha256:4bc171f8f893f59b1bdfc0beb5c870b70a7ceef96b02cc7ba3385001b5dacf67
     .cursor/rules/json-crawl-testing.mdc: sha256:072fc891d277471190470fc94fc04af1ad4154300e531a6d23c095183dbc6c64
-    .cursor/skills/json-crawl-testing/SKILL.md: sha256:4bc171f8f893f59b1bdfc0beb5c870b70a7ceef96b02cc7ba3385001b5dacf67
   source: local
   local_path: ./agent-packages/json-crawl-testing
