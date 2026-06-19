@@ -12,7 +12,3 @@ dependencies:
   apm:
     - ./agent-packages/json-crawl-authoring
     - ./agent-packages/json-crawl-testing
-
-devDependencies:
-  apm:
-    - Netcracker/qubership-ai-packages/agent-packages/apm-authoring#v1.0.0
