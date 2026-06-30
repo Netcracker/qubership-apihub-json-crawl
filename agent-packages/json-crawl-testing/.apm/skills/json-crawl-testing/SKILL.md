@@ -10,7 +10,7 @@ below are project-specific; they are not implied by a generic Jest setup.
 
 ## Import from relative `src`
 
-Tests in this repo import through `../src` (or `../src/rules`, etc.), not the
+Tests in this repository import through `../src` (or `../src/rules`, etc.), not the
 published package name. Keep new tests consistent with neighbouring files.
 
 ## Where each kind of test goes
@@ -52,7 +52,7 @@ empty prefix keys are ignored; global `/**` re-attaches on the merged result.
 
 ## Zero-deps constraint in tests
 
-Do not import other `@netcracker/*` packages into this repo's tests — the
+Do not import other `@netcracker/*` packages into this repository's tests — the
 library itself has no runtime dependencies and tests should stay self-contained.
 
 ## Before submitting

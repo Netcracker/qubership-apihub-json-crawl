@@ -12,13 +12,13 @@ what the exported types alone do not spell out.
 
 ## Zero runtime dependencies
 
-Do **not** add package dependencies. The README states this explicitly and it
+Do **not** add package dependencies. The readme states this explicitly and it
 may change later, but for now every feature must stay self-contained. Dev-only
 deps (Jest, Vite, TypeScript) belong in `package.json` `devDependencies` only.
 
 ## Public surface is `src/index.ts`
 
-Re-export new symbols from `index.ts`. Internal modules (`crawl.ts`, `rules.ts`,
+Reexport new symbols from `index.ts`. Internal modules (`crawl.ts`, `rules.ts`,
 …) are not a stable import path for consumers.
 
 ## Depth-first engines share one hook contract
