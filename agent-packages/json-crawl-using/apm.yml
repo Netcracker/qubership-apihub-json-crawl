@@ -1,4 +1,4 @@
 name: json-crawl-using
-version: 1.1.0
-description: Use when consuming json-crawl from another TypeScript project — crawling, cloning, path rules, and hook responses.
+version: 1.2.0
+description: Use when consuming json-crawl from another TypeScript project — crawling, cloning, path rules, and hook lifecycle.
 author: Netcracker

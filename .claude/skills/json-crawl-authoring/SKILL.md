@@ -73,7 +73,7 @@ Rule keys on `CrawlRules<R>`:
 | `/*` | Local fallback for keys without a more specific match. |
 | `/^` | Prefix map (`Record<string, …>`). Longest matching non-empty prefix wins; empty-string keys are ignored. |
 | `/${key}` | Exact key match (key stringified with `.toString()`). |
-| Other fields on `R` | Custom rule payload (e.g. api-unifier's `$` handler). |
+| Other fields on `R` | Custom rule payload (e.g. a root `$` handler). |
 
 Merge priority when building the effective rules for a node: start from the
 exact `/key` match, then spread prefix rules, then local `/*`, then global
@@ -102,8 +102,7 @@ Keep BFS hook-loop changes in sync with the depth-first contract above.
 ## Cycles are the caller's problem
 
 Unlike upstream json-crawl, this fork does **not** detect cyclic object graphs.
-Document new APIs accordingly; consumers (api-unifier, tree builders) must track
-visited references themselves.
+Document new APIs accordingly; callers must track visited references themselves.
 
 ## `equal` is a reference helper, not structural gold standard
 

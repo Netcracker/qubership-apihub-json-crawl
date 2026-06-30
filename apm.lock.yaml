@@ -1,5 +1,5 @@
 lockfile_version: '1'
-generated_at: '2026-06-18T14:29:43.358128+00:00'
+generated_at: '2026-06-30T07:53:30.985813+00:00'
 apm_version: 0.20.0
 dependencies:
 - repo_url: _local/json-crawl-authoring
@@ -11,11 +11,14 @@ dependencies:
   - .claude/skills/json-crawl-authoring
   - .claude/skills/json-crawl-authoring/SKILL.md
   - .cursor/rules/json-crawl-authoring.mdc
+  - .cursor/skills/json-crawl-authoring
+  - .cursor/skills/json-crawl-authoring/SKILL.md
   deployed_file_hashes:
     .agents/skills/json-crawl-authoring/SKILL.md: sha256:9e9f851b0a3b9220aa9ba37320be73247a601abb693c1b75441aa5cff21ebf73
     .claude/rules/json-crawl-authoring.md: sha256:6fa3fd15cc49abb693d9a39c7064b49afa11a25eda52f804d167d11409bd9880
-    .claude/skills/json-crawl-authoring/SKILL.md: sha256:9e9f851b0a3b9220aa9ba37320be73247a601abb693c1b75441aa5cff21ebf73
+    .claude/skills/json-crawl-authoring/SKILL.md: sha256:5cf937929a7d43d22c5c5b40ba5a85931f11bf6c18e6ac89ad710f8c85025739
     .cursor/rules/json-crawl-authoring.mdc: sha256:4a076e268fc9054c4de1db9f629d2a075c20f4d39832adc83a0e147025921c3b
+    .cursor/skills/json-crawl-authoring/SKILL.md: sha256:5cf937929a7d43d22c5c5b40ba5a85931f11bf6c18e6ac89ad710f8c85025739
   source: local
   local_path: ./agent-packages/json-crawl-authoring
 - repo_url: _local/json-crawl-testing
@@ -27,10 +30,13 @@ dependencies:
   - .claude/skills/json-crawl-testing
   - .claude/skills/json-crawl-testing/SKILL.md
   - .cursor/rules/json-crawl-testing.mdc
+  - .cursor/skills/json-crawl-testing
+  - .cursor/skills/json-crawl-testing/SKILL.md
   deployed_file_hashes:
     .agents/skills/json-crawl-testing/SKILL.md: sha256:4bc171f8f893f59b1bdfc0beb5c870b70a7ceef96b02cc7ba3385001b5dacf67
     .claude/rules/json-crawl-testing.md: sha256:0f32095548fef3619c9d0b5fee43a1ac350ba9b7f4ba9fe1eb1652662c692c03
     .claude/skills/json-crawl-testing/SKILL.md: sha256:4bc171f8f893f59b1bdfc0beb5c870b70a7ceef96b02cc7ba3385001b5dacf67
     .cursor/rules/json-crawl-testing.mdc: sha256:072fc891d277471190470fc94fc04af1ad4154300e531a6d23c095183dbc6c64
+    .cursor/skills/json-crawl-testing/SKILL.md: sha256:4bc171f8f893f59b1bdfc0beb5c870b70a7ceef96b02cc7ba3385001b5dacf67
   source: local
   local_path: ./agent-packages/json-crawl-testing
