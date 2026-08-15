@@ -50,6 +50,11 @@
     /* Module Resolution Options */
     "moduleResolution": "node",
     /* Specify module resolution strategy: 'node' (Node.js) or 'classic' (TypeScript pre-1.6). */
+    "ignoreDeprecations": "6.0",
+    /* TypeScript 6 reports 'moduleResolution: node' as deprecated (TS5107). It still
+       functions throughout 6.x. Silenced rather than switched to 'bundler'/'nodenext',
+       because changing resolution strategy changes which files resolve — that belongs
+       with the TypeScript 7 migration, not with this toolchain alignment. */
     // "baseUrl": "./",                       /* Base directory to resolve non-absolute module names. */
     // "paths": {},                           /* A series of entries which re-map imports to lookup locations relative to the 'baseUrl'. */
     // "rootDirs": [],                        /* List of root folders whose combined content represents the structure of the project at runtime. */
@@ -58,7 +63,12 @@
       "node_modules/@types"
     ],
     /* List of folders to include type definitions from. */
-    // "types": [],                           /* Type declaration files to be included in compilation. */
+    "types": [
+      "node",
+      "jest"
+    ],
+    /* TypeScript 6 defaults 'types' to [] instead of "every package under typeRoots".
+       Listed explicitly to keep the jest and node ambient globals the tests rely on. */
     // "allowSyntheticDefaultImports": true,  /* Allow default imports from modules with no default export. This does not affect code emit, just typechecking. */
     "esModuleInterop": true,
     /* Enables emit interoperability between CommonJS and ES Modules via creation of namespace objects for all imports. Implies 'allowSyntheticDefaultImports'. */
