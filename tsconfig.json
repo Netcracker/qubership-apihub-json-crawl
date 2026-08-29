@@ -49,13 +49,12 @@
     // "noFallthroughCasesInSwitch": true,    /* Report errors for fallthrough cases in switch statement. */
 
     /* Module Resolution Options */
-    "moduleResolution": "node",
-    /* Specify module resolution strategy: 'node' (Node.js) or 'classic' (TypeScript pre-1.6). */
-    "ignoreDeprecations": "6.0",
-    /* TypeScript 6 reports 'moduleResolution: node' as deprecated (TS5107). It still
-       functions throughout 6.x. Silenced rather than switched to 'bundler'/'nodenext',
-       because changing resolution strategy changes which files resolve — that belongs
-       with the TypeScript 7 migration, not with this toolchain alignment. */
+    "moduleResolution": "bundler",
+    /* This package is bundled by vite, so 'bundler' describes what actually resolves it.
+       Was 'node' with an "ignoreDeprecations" silencer and a note deferring the change to
+       the TypeScript 7 migration. That had it backwards: TypeScript 7 REMOVED node10
+       (TS5108, and ignoreDeprecations does not apply to a removed option), so this is a
+       prerequisite for TS 7 rather than part of it. See §12 item 1.10. */
     // "baseUrl": "./",                       /* Base directory to resolve non-absolute module names. */
     // "paths": {},                           /* A series of entries which re-map imports to lookup locations relative to the 'baseUrl'. */
     // "rootDirs": [],                        /* List of root folders whose combined content represents the structure of the project at runtime. */
