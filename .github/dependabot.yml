@@ -1,6 +1,7 @@
 # Dependabot configuration
 # https://docs.github.com/en/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file
 
+# Version updates are paused. Set open-pull-requests-limit above 0 to resume them.
 version: 2
 updates:
   - package-ecosystem: "npm"
@@ -8,7 +9,7 @@ updates:
     schedule:
       interval: "weekly"
       day: "sunday"
-    open-pull-requests-limit: 10
+    open-pull-requests-limit: 0
     versioning-strategy: increase
     labels:
       - "dependencies"
